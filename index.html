@@ -7,17 +7,11 @@
   <meta name="description" content="FB Rund ums Haus in Altbach: Hausmeisterservice, Reparaturen, Montage, Reinigung, Gartenpflege, Winterdienst, Transport, Entsorgung und Hilfe im Alltag. Zuverlässig, sauber und fair.">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#08275d">
-  <link rel="canonical" href="https://DEINE-DOMAIN.DE/">
-  <meta property="og:type" content="website">
+<meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta property="og:title" content="FB Rund ums Haus | Hausmeisterservice & mehr">
   <meta property="og:description" content="Zuverlässig, sauber und fair – Hausmeisterservice und Unterstützung im Alltag aus Altbach.">
-  <meta property="og:url" content="https://DEINE-DOMAIN.DE/">
-  <meta property="og:image" content="https://DEINE-DOMAIN.DE/assets/images/flyer-original.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&amp;family=Montserrat:wght@600;700;800&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/styles.css">
   <style>
     .hero {
       background: linear-gradient(90deg, rgba(255,255,255,.94) 0%, rgba(255,255,255,.84) 42%, rgba(255,255,255,.48) 73%, rgba(255,255,255,.28) 100%), url("assets/images/hero-haus-garten.png") center center / cover no-repeat;
@@ -55,7 +49,7 @@
 
       <nav id="main-nav" class="main-nav" aria-label="Hauptnavigation">
         <a href="#leistungen">Leistungen</a>
-        <a href="#ueber-uns">Über uns</a>
+        <a href="#ueber-mich">Über mich</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
 
@@ -210,7 +204,7 @@
       </div>
     </section>
 
-    <section class="section about" id="ueber-uns">
+    <section class="section about" id="ueber-mich">
       <div class="container about-grid about-grid-single">
 
         <div class="about-copy reveal">
@@ -251,6 +245,34 @@
           <div class="contact-details">
             <a href="tel:+4915510932293"><strong>Telefon / WhatsApp</strong><span>0155 10932293</span></a>
             <a href="mailto:info@fb-rundumshaus.de"><strong>E-Mail</strong><span>info@fb-rundumshaus.de</span></a>          </div>
+
+
+          <div class="contact-save-card">
+            <div class="contact-save-qr">
+              <img
+                src="assets/images/qr-kontakt-tim.png"
+                alt="QR-Code zum Speichern der Kontaktdaten von Tim Fiedler-Becker"
+                width="180"
+                height="180"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="contact-save-copy">
+              <strong>Kontakt direkt speichern</strong>
+              <p>
+                QR-Code scannen und die Kontaktdaten von Tim Fiedler-Becker
+                direkt im Smartphone speichern.
+              </p>
+              <a
+                class="btn btn-small contact-save-btn"
+                href="tim-fiedler-becker.vcf"
+                type="text/vcard"
+              >
+                Kontakt speichern
+              </a>
+            </div>
+          </div>
 
           <div class="area-note">
             <strong>Einsatzgebiet</strong>
@@ -299,13 +321,12 @@
             Ihre Nachricht *
             <textarea name="nachricht" rows="6" required placeholder="Wobei können wir Sie unterstützen?"></textarea>
           </label>
+          <p class="privacy-note">
+            Hinweise zur Verarbeitung Ihrer Angaben finden Sie in unserer
+            <a href="datenschutz.html">Datenschutzerklärung</a>.
+          </p>
 
-          <label class="check">
-            <input type="checkbox" required>
-            <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage zu. *</span>
-          </label>
-
-          <button class="btn" type="submit">Anfrage absenden</button>
+<button class="btn" type="submit">Anfrage absenden</button>
           <p class="form-note">* Pflichtfelder</p>
         </form>
       </div>
@@ -313,36 +334,24 @@
   </main>
 
   <footer class="site-footer">
-    <div class="footer-brand-band">
-      <div class="container">
-        <a class="brand footer-brand" href="#top" aria-label="FB Rund ums Haus – zurück zum Seitenanfang">
-          <img class="brand-logo" src="assets/images/fb-logo.png" alt="" width="1046" height="540" loading="lazy">
-          <span class="brand-copy">
-            <strong class="brand-name"><span>RUND</span> <span class="brand-green">UMS</span> <span>HAUS</span></strong>
-            <small class="brand-subline">HAUSMEISTERSERVICE &amp; MEHR</small>
-          </span>
-          <span class="brand-claim">Wir helfen <em>Menschen</em> im Alltag.</span>
-        </a>
+    <div class="container">
+      <a class="footer-brand-card" href="#top" aria-label="FB Rund ums Haus – zurück zum Seitenanfang">
+        <img class="footer-logo" src="assets/images/fb-logo.png" alt="FB Rund ums Haus" width="1046" height="540" loading="lazy">
+        <div class="footer-brand-copy">
+          <strong class="footer-brand-name">RUND <span>UMS</span> HAUS</strong>
+          <small class="footer-brand-subline">HAUSMEISTERSERVICE &amp; MEHR</small>
+        </div>
+        <div class="footer-claim">Wir helfen <span>Menschen</span> im Alltag.</div>
+      </a>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> FB Rund ums Haus</span>
+        <nav class="footer-links" aria-label="Footer-Navigation">
+          <a href="#kontakt">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </nav>
       </div>
-    </div>
-
-    <div class="container footer-subfooter">
-      <div class="footer-contact">
-        <strong>Kontakt</strong>
-        <a href="tel:+4915510932293">0155 10932293</a>
-        <a href="mailto:info@fb-rundumshaus.de">info@fb-rundumshaus.de</a>
-      </div>
-
-      <nav class="footer-links" aria-label="Footer-Navigation">
-        <a href="#kontakt">Kontakt</a>
-        <a href="impressum.html">Impressum</a>
-        <a href="datenschutz.html">Datenschutz</a>
-      </nav>
-    </div>
-
-    <div class="container footer-bottom">
-      <span>© <span id="year"></span> FB Rund ums Haus</span>
-      <span>Tim Fiedler-Becker</span>
     </div>
   </footer>
 

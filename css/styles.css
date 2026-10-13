@@ -80,8 +80,10 @@ p{margin-top:0}
 .btn-ghost{background:transparent;color:var(--navy);border:1px solid rgba(8,39,93,.2);box-shadow:none}
 .btn-ghost:hover{background:#fff;color:var(--navy)}
 .btn-light{background:#fff;color:var(--navy);box-shadow:none}
-.text-link{color:var(--green);font-weight:800}
-
+.text-link { display:inline-flex;align-items:left;justify-content:center;gap:8px;
+  background:var(--green);color:#fff;border:0;border-radius:999px;padding:14px 22px;
+  font-weight:800;box-shadow:0 10px 25px rgba(47,134,31,.22);transition:.2s ease;
+}
 .hero{
   position:relative;overflow:hidden;
   background:linear-gradient(135deg,#f8fbff 0%,#fff 45%,#eef7eb 100%);
@@ -158,6 +160,73 @@ p{margin-top:0}
 .contact-details a,.contact-details>div{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid var(--line)}
 .contact-details strong{color:var(--navy)}
 .contact-details span{color:var(--muted);text-align:right}
+
+.contact-save-card{
+  display:grid;
+  grid-template-columns:132px minmax(0,1fr);
+  align-items:center;
+  gap:20px;
+  margin:24px 0;
+  padding:18px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:var(--soft);
+}
+
+.contact-save-qr{
+  display:grid;
+  place-items:center;
+  padding:8px;
+  background:#fff;
+  border-radius:14px;
+  box-shadow:0 8px 24px rgba(8,39,93,.08);
+}
+
+.contact-save-qr img{
+  width:116px;
+  height:116px;
+  display:block;
+}
+
+.contact-save-copy{
+  min-width:0;
+}
+
+.contact-save-copy > strong{
+  display:block;
+  margin-bottom:6px;
+  color:var(--navy);
+  font-size:1rem;
+}
+
+.contact-save-copy p{
+  margin:0 0 14px;
+  color:var(--muted);
+  font-size:.9rem;
+  line-height:1.5;
+}
+
+.contact-save-btn{
+  width:auto;
+  box-shadow:none;
+}
+
+@media (max-width:480px){
+  .contact-save-card{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .contact-save-qr{
+    width:max-content;
+    margin-inline:auto;
+  }
+
+  .contact-save-btn{
+    width:100%;
+  }
+}
+
 .area-note{padding:18px;border-radius:16px;background:var(--soft)}
 .area-note p{margin:4px 0 0;color:var(--muted)}
 .contact-form{background:var(--soft);border:1px solid var(--line);padding:30px;border-radius:26px}
@@ -171,18 +240,9 @@ p{margin-top:0}
 .check input{width:auto;margin:4px 0 0}
 .check a{text-decoration:underline;color:var(--navy)}
 .form-note{font-size:.75rem;color:var(--muted);margin:12px 0 0}
+.privacy-note{font-size:.82rem;color:var(--muted);margin:6px 0 18px}
+.privacy-note a{text-decoration:underline;color:var(--navy)}
 .hidden{display:none!important}
-
-.site-footer{background:#061b40;color:#dce7f5;padding:52px 0 24px}
-.footer-grid{display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:40px}
-.footer-grid>div{display:grid;align-content:start;gap:9px}
-.footer-grid strong{color:#fff}
-.footer-grid a:hover{color:#8ed26f}
-.footer-brand .brand-mark{background:#fff;color:var(--navy)}
-.footer-brand strong{color:#fff}
-.footer-brand small{color:#8ed26f}
-.site-footer p{color:#aebed1}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:34px;padding-top:20px;display:flex;justify-content:space-between;gap:20px;font-size:.82rem;color:#9eb0c8}
 
 .floating-contact{
   position:fixed;right:20px;bottom:20px;z-index:900;width:56px;height:56px;border-radius:50%;
@@ -239,10 +299,10 @@ p{margin-top:0}
 .site-header .brand { display: flex; align-items: center; gap: 12px; min-width: 0; flex-shrink: 0; }
 .site-header .brand-logo { width: 82px; height: auto; }
 .site-header .brand-copy { display: flex; flex-direction: column; align-items: center; min-width: 0; line-height: 1; white-space: nowrap; }
-.site-header .brand-name { display: block; font-family: "Montserrat", sans-serif; font-size: clamp(1.04rem, 1.38vw, 1.38rem); font-weight: 800; letter-spacing: -.035em; line-height: 1.1; color: #10274d; }
+.site-header .brand-name { display: block; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: clamp(1.04rem, 1.38vw, 1.38rem); font-weight: 800; letter-spacing: -.035em; line-height: 1.1; color: #10274d; }
 .site-header .brand-green { color: #0b5115; }
-.site-header .brand-subline { display: block; margin-top: 5px; font-family: "Montserrat", sans-serif; font-size: clamp(.48rem, .65vw, .66rem); font-weight: 700; letter-spacing: .075em; line-height: 1.2; color: #10274d; }
-.site-header .brand-claim { margin-left: 12px; font-family: "Caveat", cursive; font-size: clamp(1.08rem, 1.52vw, 1.55rem); font-weight: 500; line-height: 1; white-space: nowrap; color: #10274d; transform: rotate(-2deg); }
+.site-header .brand-subline { display: block; margin-top: 5px; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: clamp(.48rem, .65vw, .66rem); font-weight: 700; letter-spacing: .075em; line-height: 1.2; color: #10274d; }
+.site-header .brand-claim { margin-left: 12px; font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive; font-size: clamp(1.08rem, 1.52vw, 1.55rem); font-weight: 500; line-height: 1; white-space: nowrap; color: #10274d; transform: rotate(-2deg); }
 .site-header .brand-claim em { font-style: normal; color: #0b5115; }
 @media (max-width: 1240px) {
   .site-header .header-inner { gap: 14px; }
@@ -262,25 +322,226 @@ p{margin-top:0}
   .site-header .brand-subline { font-size: clamp(.40rem, 1.65vw, .56rem); letter-spacing: .04em; }
 }
 
-/* The footer repeats the header lettering on a light surface for legibility. */
-.site-footer .footer-grid { grid-template-columns: minmax(0,1.8fr) minmax(0,.65fr) minmax(0,.65fr); gap: 24px; }
-.site-footer .footer-brand { display: flex; align-items: center; gap: 10px; width: max-content; max-width: 100%; min-width: 0; padding: 14px; border-radius: 18px; background: #fff; }
-.site-footer .footer-brand .brand-logo { width: 72px; height: auto; flex: none; }
-.site-footer .footer-brand .brand-copy { display: flex; flex-direction: column; align-items: center; line-height: 1; white-space: nowrap; }
-.site-footer .footer-brand .brand-name { display: block; font-family: "Montserrat",sans-serif; font-size: clamp(.98rem,1.2vw,1.25rem); font-weight: 800; letter-spacing: -.035em; line-height: 1.1; color: #10274d; }
-.site-footer .footer-brand .brand-green { color: #0b5115; }
-.site-footer .footer-brand .brand-subline { display: block; margin-top: 5px; font-family: "Montserrat",sans-serif; font-size: clamp(.47rem,.57vw,.62rem); font-weight: 700; letter-spacing: .06em; line-height: 1.2; color: #10274d; }
-.site-footer .footer-brand .brand-claim { margin-left: 4px; font-family: "Caveat",cursive; font-size: clamp(1rem,1.28vw,1.35rem); font-weight: 500; line-height: 1; white-space: nowrap; color: #10274d; transform: rotate(-2deg); }
-.site-footer .footer-brand .brand-claim em { font-style: normal; color: #0b5115; }
-@media (max-width: 1080px) {
-  .site-footer .footer-brand { display: grid; grid-template-columns: 72px auto; column-gap: 10px; row-gap: 2px; }
-  .site-footer .footer-brand .brand-logo { grid-row: 1 / span 2; }
-  .site-footer .footer-brand .brand-claim { grid-column: 2; margin: 0; text-align: center; transform: none; }
+
+/* ========================================
+   FINALER FOOTER
+======================================== */
+.site-footer{
+  background:#071f49;
+  color:#dce7f5;
+  padding:44px 0 24px;
 }
-@media (max-width: 680px) {
-  .site-footer .footer-grid { grid-template-columns: 1fr; }
-  .site-footer .footer-brand .brand-logo { width: 60px; }
-  .site-footer .footer-brand { grid-template-columns: 60px auto; }
-  .site-footer .footer-brand .brand-name { font-size: clamp(.87rem,4vw,1.15rem); }
-  .site-footer .footer-brand .brand-subline { font-size: clamp(.41rem,1.8vw,.55rem); }
+.footer-brand-card{
+  width: 100%;
+  min-height:120px;
+  margin:0 auto 36px;
+  padding:20px 30px;
+  display:grid;
+  grid-template-columns:130px auto 1fr;
+  align-items:center;
+  gap:24px;
+  background:#fff;
+  border-radius:28px;
+  text-decoration:none;
+  box-shadow:0 12px 35px rgba(0,0,0,.08);
+}
+.footer-logo{
+  width:130px;
+  height:auto;
+  display:block;
+  object-fit:contain;
+}
+.footer-brand-copy{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  white-space:nowrap;
+}
+.footer-brand-name{
+  font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:clamp(1.45rem,2vw,2rem);
+  font-weight:800;
+  line-height:1.05;
+  letter-spacing:-.03em;
+  color:#10274d;
+}
+.footer-brand-name span{color:#0b6517}
+.footer-brand-subline{
+  margin-top:8px;
+  font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:clamp(.65rem,.9vw,.85rem);
+  font-weight:700;
+  letter-spacing:.06em;
+  color:#10274d;
+}
+.footer-claim{
+  justify-self:end;
+  font-family:"Segoe Print","Bradley Hand","Comic Sans MS",cursive;
+  font-size:clamp(1.55rem,2.6vw,2.4rem);
+  font-weight:500;
+  line-height:1;
+  color:#10274d;
+  white-space:nowrap;
+  transform:rotate(-2deg);
+}
+.footer-claim span{color:#0b6517}
+.site-footer .footer-bottom{
+  margin:0;
+  padding-top:22px;
+  border-top:1px solid rgba(255,255,255,.16);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  font-size:.86rem;
+  color:#b7c5d8;
+}
+.footer-links{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+.footer-links a{
+  color:#fff;
+  text-decoration:none;
+  transition:color .2s ease;
+}
+.footer-links a:hover{color:#8ed26f}
+
+@media (max-width:900px){
+  .footer-brand-card{grid-template-columns:100px 1fr}
+  .footer-logo{width:100px}
+  .footer-claim{
+    grid-column:1 / -1;
+    justify-self:center;
+    margin-top:4px;
+    white-space:normal;
+    text-align:center;
+    transform:none;
+  }
+}
+@media (max-width:600px){
+  .site-footer{padding:30px 0 20px}
+  .footer-brand-card{
+    width:100%;
+    padding:20px;
+    grid-template-columns:75px 1fr;
+    gap:14px;
+    border-radius:22px;
+  }
+  .footer-logo{width:75px}
+  .footer-brand-name{font-size:clamp(1rem,5vw,1.4rem)}
+  .footer-brand-subline{font-size:clamp(.48rem,2.5vw,.65rem)}
+  .footer-claim{grid-column:1 / -1;font-size:1.55rem}
+  .site-footer .footer-bottom{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:14px;
+  }
+  .footer-links{flex-wrap:wrap;gap:10px 16px}
+}
+
+/* Über-mich-Bereich über die komplette Breite */
+#ueber-mich .about-grid.about-grid-single {
+  display: block !important;
+}
+
+#ueber-mich .about-copy {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+#ueber-mich .about-copy > * {
+  width: 100%;
+  max-width: none !important;
+}
+#ueber-mich .about-copy {
+  text-align: left;
+}
+
+#ueber-mich .text-link {
+  width: auto !important;
+  display: inline-flex !important;
+  margin-right: auto;
+}
+
+/* Legal pages: same visual brand as homepage, without external font services */
+.simple-topbar .brand{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  min-width:0;
+}
+.simple-topbar .brand-logo{
+  display:block;
+  width:82px;
+  height:auto;
+  flex:none;
+}
+.simple-topbar .brand-copy{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  min-width:0;
+  line-height:1;
+  white-space:nowrap;
+}
+.simple-topbar .brand-name{
+  display:block;
+  font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:clamp(1.04rem,1.38vw,1.38rem);
+  font-weight:800;
+  letter-spacing:-.035em;
+  line-height:1.1;
+  color:#10274d;
+}
+.simple-topbar .brand-green{color:#0b5115}
+.simple-topbar .brand-subline{
+  display:block;
+  margin-top:5px;
+  font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:clamp(.48rem,.65vw,.66rem);
+  font-weight:700;
+  letter-spacing:.075em;
+  line-height:1.2;
+  color:#10274d;
+}
+.simple-topbar .brand-claim{
+  margin-left:12px;
+  font-family:"Segoe Print","Bradley Hand","Comic Sans MS",cursive;
+  font-size:clamp(1.08rem,1.52vw,1.55rem);
+  font-weight:500;
+  line-height:1;
+  white-space:nowrap;
+  color:#10274d;
+  transform:rotate(-2deg);
+}
+.simple-topbar .brand-claim em{
+  font-style:normal;
+  color:#0b5115;
+}
+@media (max-width:760px){
+  .simple-topbar .brand{
+    display:grid;
+    grid-template-columns:56px auto;
+    column-gap:8px;
+    row-gap:0;
+  }
+  .simple-topbar .brand-logo{
+    width:56px;
+    grid-row:1 / span 2;
+  }
+  .simple-topbar .brand-name{
+    font-size:clamp(.85rem,3.15vw,1.15rem);
+  }
+  .simple-topbar .brand-subline{
+    font-size:clamp(.40rem,1.65vw,.56rem);
+    letter-spacing:.04em;
+  }
+  .simple-topbar .brand-claim{
+    grid-column:2;
+    margin:0;
+    font-size:.98rem;
+    transform:none;
+  }
 }

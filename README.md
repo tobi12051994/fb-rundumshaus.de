@@ -33,3 +33,21 @@ Nach dem ersten Deploy sollte Netlify das Formular erkennen.
 Für eine nicht indexierte Vorschau kann vorübergehend in `index.html`
 `<meta name="robots" content="noindex,nofollow">` gesetzt werden.
 Vor Livegang wieder auf `index,follow` ändern.
+
+
+## Kontakt-QR / vCard
+
+Im Kontaktbereich befindet sich jetzt ein QR-Code mit den Kontaktdaten von Tim Fiedler-Becker.
+Beim Scannen kann der Kontakt direkt auf dem Smartphone gespeichert werden.
+
+Zusätzlich ist `tim-fiedler-becker.vcf` eingebunden. Der Button „Kontakt speichern“ funktioniert
+auch dann, wenn die Website bereits auf dem Smartphone geöffnet ist.
+
+Enthaltene Kontaktdaten:
+- Tim Fiedler-Becker
+- FB Rund ums Haus
+- 0155 10932293
+- info@fb-rundumshaus.de
+- https://fb-rundumshaus.de
+
+Die Anschrift ist bewusst nicht in der vCard enthalten.
