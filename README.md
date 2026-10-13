@@ -51,3 +51,36 @@ Enthaltene Kontaktdaten:
 - https://fb-rundumshaus.de
 
 Die Anschrift ist bewusst nicht in der vCard enthalten.
+
+
+## Typografie
+
+Die Website verwendet jetzt **Montserrat** (Google Fonts) für die normale Website-Typografie.
+Die handschriftliche Schrift bei **„Ich helfe Menschen im Alltag.“** wurde bewusst nicht geändert.
+
+Hinweis: Montserrat wird in diesem Stand direkt von Google Fonts geladen. Für eine datenschutzärmere
+Variante kann Montserrat später lokal auf dem eigenen Webspace gehostet werden.
+
+
+## SEO-Anpassungen (13.10.2026)
+
+- Meta-Description der Startseite gekürzt und präzisiert.
+- H1 und sichtbarer Einleitungstext sprachlich besser aufeinander abgestimmt.
+- Canonical-URL auf `https://fb-rundumshaus.de/` gesetzt.
+- Open-Graph- und Twitter-Metadaten ergänzt.
+- LocalBusiness-Structured-Data (JSON-LD) ergänzt.
+- Favicon und Apple-Touch-Icon aus dem vorhandenen FB-Logo erstellt.
+- `robots.txt` und `sitemap.xml` auf `https://fb-rundumshaus.de` umgestellt.
+- Impressum und Datenschutz haben eigene Canonical-URLs und Meta-Descriptions.
+- Dekorative Leistungsicons behalten bewusst `alt=""`; das ist barrierefrei sinnvoller als redundante Beschreibungen.
+
+### WWW / Non-WWW
+Den 301-Redirect nicht künstlich im Quellcode erzwingen.
+Sobald die Domain in Netlify verbunden ist, dort eine Variante als **Primary domain** festlegen.
+Netlify leitet die andere Variante (www bzw. ohne www) automatisch auf die Primary Domain um.
+
+Empfohlene Hauptadresse für dieses Projekt:
+`https://fb-rundumshaus.de/`
+
+### Wichtig vor Veröffentlichung
+Falls die Netlify-Adresse noch nur eine Kundenvorschau ist, sollte sie bis zum echten Livegang nicht von Suchmaschinen indexiert werden.

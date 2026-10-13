@@ -17,7 +17,7 @@
 html{scroll-behavior:smooth}
 body{
   margin:0;
-  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-family:"Montserrat",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   color:var(--ink);
   background:#fff;
   line-height:1.6;
@@ -80,9 +80,14 @@ p{margin-top:0}
 .btn-ghost{background:transparent;color:var(--navy);border:1px solid rgba(8,39,93,.2);box-shadow:none}
 .btn-ghost:hover{background:#fff;color:var(--navy)}
 .btn-light{background:#fff;color:var(--navy);box-shadow:none}
+.btn-light:hover{color:aliceblue}
 .text-link { display:inline-flex;align-items:left;justify-content:center;gap:8px;
   background:var(--green);color:#fff;border:0;border-radius:999px;padding:14px 22px;
   font-weight:800;box-shadow:0 10px 25px rgba(47,134,31,.22);transition:.2s ease;
+}
+.text-link:hover {
+  transform: translateY(-2px);
+  background: #26731a;
 }
 .hero{
   position:relative;overflow:hidden;
@@ -299,9 +304,9 @@ p{margin-top:0}
 .site-header .brand { display: flex; align-items: center; gap: 12px; min-width: 0; flex-shrink: 0; }
 .site-header .brand-logo { width: 82px; height: auto; }
 .site-header .brand-copy { display: flex; flex-direction: column; align-items: center; min-width: 0; line-height: 1; white-space: nowrap; }
-.site-header .brand-name { display: block; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: clamp(1.04rem, 1.38vw, 1.38rem); font-weight: 800; letter-spacing: -.035em; line-height: 1.1; color: #10274d; }
+.site-header .brand-name { display: block; font-family: "Montserrat", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: clamp(1.04rem, 1.38vw, 1.38rem); font-weight: 800; letter-spacing: -.035em; line-height: 1.1; color: #10274d; }
 .site-header .brand-green { color: #0b5115; }
-.site-header .brand-subline { display: block; margin-top: 5px; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: clamp(.48rem, .65vw, .66rem); font-weight: 700; letter-spacing: .075em; line-height: 1.2; color: #10274d; }
+.site-header .brand-subline { display: block; margin-top: 5px; font-family: "Montserrat", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: clamp(.48rem, .65vw, .66rem); font-weight: 700; letter-spacing: .075em; line-height: 1.2; color: #10274d; }
 .site-header .brand-claim { margin-left: 12px; font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive; font-size: clamp(1.08rem, 1.52vw, 1.55rem); font-weight: 500; line-height: 1; white-space: nowrap; color: #10274d; transform: rotate(-2deg); }
 .site-header .brand-claim em { font-style: normal; color: #0b5115; }
 @media (max-width: 1240px) {
@@ -358,7 +363,7 @@ p{margin-top:0}
   white-space:nowrap;
 }
 .footer-brand-name{
-  font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-family:"Montserrat",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   font-size:clamp(1.45rem,2vw,2rem);
   font-weight:800;
   line-height:1.05;
@@ -368,7 +373,7 @@ p{margin-top:0}
 .footer-brand-name span{color:#0b6517}
 .footer-brand-subline{
   margin-top:8px;
-  font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-family:"Montserrat",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   font-size:clamp(.65rem,.9vw,.85rem);
   font-weight:700;
   letter-spacing:.06em;
@@ -488,7 +493,7 @@ p{margin-top:0}
 }
 .simple-topbar .brand-name{
   display:block;
-  font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-family:"Montserrat",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   font-size:clamp(1.04rem,1.38vw,1.38rem);
   font-weight:800;
   letter-spacing:-.035em;
@@ -499,7 +504,7 @@ p{margin-top:0}
 .simple-topbar .brand-subline{
   display:block;
   margin-top:5px;
-  font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-family:"Montserrat",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   font-size:clamp(.48rem,.65vw,.66rem);
   font-weight:700;
   letter-spacing:.075em;
